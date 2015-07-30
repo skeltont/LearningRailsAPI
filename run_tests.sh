@@ -1,3 +1,12 @@
+
+# Quick script for running the tests for this api.
+#
+# it's not pretty, but I didn't ask you to look at it.
+#
+#
+#
+
+
 if [ $# -eq 0 ]
   then
     echo "No arguments supplied"
@@ -13,6 +22,12 @@ if [ $# -eq 0 ]
   elif [ $1 = "authenticable_spec" ]
     then
       bundle exec rspec spec/controllers/concerns/authenticable_spec.rb
+  elif [ $1 = "product_spec" ]
+    then
+      bundle exec rspec spec/models/product_spec.rb
+  elif [ $1 = "all" ]
+    then
+      bundle exec rspec spec/
   else
-    echo "available tests are: users_controller, users_model"
+    echo "available tests are:\n\tall\n\tusers_controller,\n\tusers_model,\n\tsessions_controller\n\tauthenticable_spec\n\tproduct_spec"
 fi
