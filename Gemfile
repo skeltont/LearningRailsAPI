@@ -15,10 +15,12 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 #Api gems
-gem 'active_model_serializers'
+# gem 'active_model_serializers'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+gem 'active_model_serializers', git: 'git@github.com:rails-api/active_model_serializers.git', branch: '0-8-stable'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
