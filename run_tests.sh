@@ -28,6 +28,9 @@ if [ $# -eq 0 ]
   elif [ $1 = "order_model" ]
     then
       bundle exec rspec spec/models/order_spec.rb
+  elif [ $1 = "orders_controller" ]
+    then
+      bundle exec rspec spec/controllers/api/v1/orders_controller_spec.rb
   elif [ $1 = "products_controller" ]
     then
       bundle exec rspec spec/controllers/api/v1/products_controller_spec.rb
@@ -40,6 +43,7 @@ if [ $# -eq 0 ]
             users_controller,
             sessions_controller,
             products_controller,
+            orders_controller,
             users_model,
             product_model,
             order_model,
