@@ -42,3 +42,5 @@ class Api::V1::ProductsController < ApplicationController
       params.require(:product).permit(:title, :price, :published)
     end
 end
+
+## LEFT OFF ON 7.6 'SEARCHING PRODUCTS'
