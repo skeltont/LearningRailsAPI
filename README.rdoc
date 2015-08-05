@@ -2,3 +2,5 @@
 
 = An excellent readme
 you're welcome
+
+= Learned through: http://apionrails.icalialabs.com/book/chapter_one
